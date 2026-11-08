@@ -1,19 +1,14 @@
 # Haris Md Sahed — Research Portfolio
 
-This folder contains the updated static website and three publicly accessible PDF credentials.
+This update preserves the original website design and embedded CSS from the supplied `index.html`. It adds an Academic Credentials section with public view and download links.
 
-## Files
-- `index.html` — portfolio homepage
-- `style.css` — responsive styling
-- `documents/Undergraduate_Transcript_TIU.pdf`
-- `documents/NonDegree_CS_Transcript_University_of_Aizu.pdf`
-- `documents/TOEFL_iBT_Score_Report.pdf`
+Upload these files to the root of your GitHub Pages repository:
+- `index.html`
+- `profile.jpg`
+- `graduation.jpg`
+- `Haris_Md_Sahed_CV.pdf` (keep your existing CV file in the repository)
+- `documents/` (the three PDF credentials)
 
-## Publish on GitHub Pages
-1. Open the repository `hmdsahed.github.io`.
-2. Upload the contents of this folder (not the enclosing folder) to the repository root.
-3. Keep the `documents` folder and its three PDFs in the same relative structure.
-4. Commit the changes to the `main` branch.
-5. Wait for GitHub Pages to deploy, then check the website and test each View/Download link.
+The CSS remains embedded in `index.html`; no separate stylesheet is needed.
 
-The PDFs are public when the repository/site is public. They contain personal and academic identifiers. Publish them only with the understanding that visitors can view, download, copy, and share them.
+The PDFs are public on a public GitHub Pages site. Check each document for student IDs, date of birth, registration numbers, or other personal details before publishing.

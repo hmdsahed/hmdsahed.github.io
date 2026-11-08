@@ -3,218 +3,160 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Haris Md Sahed | Portfolio</title>
-<meta name="description" content="Haris Md Sahed — AI, Data Science and Machine Learning researcher.">
+<meta name="description" content="Haris Md Sahed — AI, Data Science and Information Systems researcher.">
+<title>Haris Md Sahed — Research Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Slab:wght@500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#102b4a;--blue:#1767c9;--gold:#bd8c4b;--ink:#142333;--muted:#647180;--paper:#f8f8f6;--line:#dfe2e4;--white:#fff;--soft:#eef3f7}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",Arial,sans-serif;line-height:1.6}a{color:inherit}
+.top{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(15px);border-bottom:1px solid var(--line)}.nav{max-width:1240px;height:72px;margin:auto;padding:0 25px;display:flex;align-items:center;justify-content:space-between}.logo{text-decoration:none;font-weight:700;font-size:19px;color:var(--navy)}.logo small{font-weight:400;font-size:10px;color:#71808e;margin-left:8px}.links{display:flex;gap:24px;font-size:11px;color:#4f5c69}.links a{text-decoration:none}.links a:hover{color:var(--blue)}.cv{background:var(--navy);color:#fff;text-decoration:none;padding:10px 16px;border-radius:4px;font-size:11px;font-weight:700}
+.wrap{max-width:1240px;margin:auto;padding:0 25px}.hero{min-height:610px;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:60px;border-bottom:1px solid var(--line)}.kicker{text-transform:uppercase;letter-spacing:.19em;font-size:9px;color:var(--gold);font-weight:700}.hero h1{font:500 clamp(57px,7vw,91px)/.93 "Playfair Display",Georgia,serif;letter-spacing:-.05em;margin:17px 0 22px;color:var(--navy)}.hero h1 em{font-style:italic;color:var(--blue)}.hero-sub{font:500 25px/1.15 "Playfair Display";color:var(--navy);max-width:590px;margin-bottom:18px}.intro{font-size:14px;color:var(--muted);max-width:610px}.actions{display:flex;gap:10px;margin-top:26px}.action{padding:10px 17px;border:1px solid var(--navy);font-size:11px;text-decoration:none;border-radius:3px}.action.primary{background:var(--navy);color:#fff}.social{display:flex;gap:21px;margin-top:24px;font-size:10px;font-weight:700;color:var(--blue)}.hero-photo{height:500px;position:relative;overflow:hidden}.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center center}.hero-photo:after{content:"";position:absolute;inset:14px;border:1px solid rgba(255,255,255,.7);pointer-events:none}.quote{position:absolute;right:20px;bottom:25px;width:205px;padding:19px;background:rgba(16,43,74,.94);color:#fff;font:italic 16px/1.4 "Playfair Display";z-index:2}.quote small{display:block;color:#d5b17b;font:9px "DM Sans";letter-spacing:.15em;margin-top:11px}
+.quick{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid var(--line);background:#fff}.quick div{padding:20px 20px;border-right:1px solid var(--line);min-height:110px}.quick div:last-child{border:0}.quick .icon{color:var(--blue);font-size:19px}.quick b{display:block;color:var(--navy);font:600 14px "Playfair Display";margin-top:5px}.quick span{font-size:10px;color:var(--muted)}
+.section{padding:88px 0;border-bottom:1px solid var(--line)}.head{display:grid;grid-template-columns:200px 1fr;gap:55px;margin-bottom:48px}.num{font-size:10px;color:var(--gold);letter-spacing:.18em;font-weight:700}.label{text-transform:uppercase;font-size:10px;letter-spacing:.14em;font-weight:700;color:var(--muted)}.section h2{font:500 clamp(37px,5vw,59px)/1.04 "Playfair Display";letter-spacing:-.04em;color:var(--navy);margin:0;max-width:800px}.section h2 em{color:var(--blue)}.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:65px}.about-grid p{font-size:14px;color:var(--muted);margin:0 0 15px}.quote2{border-left:2px solid var(--gold);padding:5px 0 5px 25px;font:500 21px/1.45 "Playfair Display";color:var(--navy)}
+.interests{display:grid;grid-template-columns:1.1fr .9fr;gap:65px}.interest-list{display:grid;grid-template-columns:1fr 1fr;gap:0 25px}.interest{border-top:1px solid var(--line);padding:15px 0;font-size:12px;color:#47596b}.interest b{color:var(--blue);margin-right:8px}
+.edu{display:grid;grid-template-columns:1fr 1fr;gap:80px}.entry{padding-bottom:24px;margin-bottom:24px;border-bottom:1px solid var(--line)}.entry:last-child{border:0}.entry h3{font:500 21px "Playfair Display";margin:0 0 3px;color:var(--navy)}.org{color:var(--blue);font-size:12px;font-weight:700}.date{display:block;font-size:10px;color:#89929a;margin-top:3px}.entry p{font-size:12px;color:var(--muted);margin:9px 0 0}
+.phd{background:var(--navy);color:#fff;padding:38px 42px;display:grid;grid-template-columns:1fr auto;gap:35px;align-items:center;margin-top:20px}.phd .kicker{color:#d4ad74}.phd h3{font:500 28px "Playfair Display";margin:7px 0}.phd p{color:#c2ccd5;font-size:12px;max-width:760px;margin:0}.phd a{border:1px solid #c6d4df;color:#fff;text-decoration:none;padding:10px 15px;font-size:10px;white-space:nowrap}
+.milestones{position:relative;margin-top:15px;padding-top:24px}.line{position:absolute;left:10px;right:10px;top:29px;height:2px;background:#cad3dc}.milestone-grid{display:grid;grid-template-columns:repeat(5,1fr);position:relative}.m{padding-right:25px}.dot{width:11px;height:11px;background:var(--blue);border-radius:50%;margin:0 0 17px;box-shadow:0 0 0 4px var(--paper)}.m:last-child .dot{background:#c6cdd3}.m .mdate{font-weight:700;color:var(--navy);font-size:12px}.m h4{font:500 17px/1.2 "Playfair Display";margin:7px 0}.m p{font-size:11px;color:var(--muted);margin:0}.m img{width:135px;height:90px;object-fit:cover;margin-top:13px;display:block}
+.publications{display:grid;grid-template-columns:1fr 1fr;gap:18px}.paper{background:#fff;border:1px solid var(--line);padding:30px;min-height:285px;display:flex;flex-direction:column}.paper.pre{background:#edf2f5}.type{font-size:9px;letter-spacing:.15em;font-weight:700;color:var(--gold)}.pre .type{color:var(--blue)}.paper h3{font:500 24px/1.25 "Playfair Display";color:var(--navy);margin:15px 0 9px}.authors{font-size:11px;color:var(--muted)}.paper-desc{font-size:11px;color:var(--muted);margin:13px 0}.paper-bottom{margin-top:auto;padding-top:16px;border-top:1px solid var(--line);display:flex;gap:9px;flex-wrap:wrap}.paper-btn{font-size:10px;text-decoration:none;padding:8px 11px;border:1px solid #bdc7cf;color:var(--navy);border-radius:3px}.paper-btn.main{background:var(--navy);border-color:var(--navy);color:#fff}
+.work-dark{background:var(--navy);color:#fff}.work-dark .section{border-color:#33475a}.work-dark .section h2{color:#fff}.work-dark .section h2 em{color:#a8c4da}.work-dark .num{color:#d0a96c}.project{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid #405466}.project:last-child{border-bottom:1px solid #405466}.project-info{padding:42px 55px 42px 0}.project-no{font-size:9px;letter-spacing:.16em;color:#d0a96c}.project h3{font:500 33px/1.08 "Playfair Display";margin:16px 0}.project p{font-size:12px;color:#bdc7cf;max-width:500px}.visual{min-height:300px;background:#1b3954;display:grid;place-items:center;overflow:hidden}.chart{width:72%;height:63%;border:1px solid #668198;position:relative}.chart:before{content:"TRAFFIC / PREDICTION";position:absolute;top:13px;left:15px;font-size:8px;letter-spacing:.15em;color:#a8bac9}.bars{position:absolute;left:18px;right:18px;bottom:18px;height:62%;display:flex;align-items:end;gap:7px}.bars i{display:block;flex:1;background:#7794aa}.bars i:nth-child(1){height:30%}.bars i:nth-child(2){height:52%}.bars i:nth-child(3){height:40%}.bars i:nth-child(4){height:76%}.bars i:nth-child(5){height:61%}.bars i:nth-child(6){height:88%}
+.skills{display:grid;grid-template-columns:1fr 2fr;gap:60px}.skillgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.skill{border-top:1px solid var(--line);padding:15px 0}.skill span{display:block;font-size:9px;text-transform:uppercase;letter-spacing:.13em;color:#8b8e8d}.skill b{font-size:12px;color:var(--navy)}
+.contact{padding:100px 0 120px;display:grid;grid-template-columns:1fr 1fr;gap:70px}.contact h2{font:500 clamp(43px,6vw,73px)/1 "Playfair Display";margin:0;color:var(--navy)}.contact h2 em{color:var(--blue)}.contact p{font-size:12px;color:var(--muted)}.email{font:500 23px "Playfair Display";text-decoration:none;border-bottom:1px solid var(--gold)}
+footer{max-width:1240px;margin:auto;padding:23px 25px;display:flex;justify-content:space-between;font-size:9px;color:#8a9197}
+@media(max-width:850px){.links{display:none}.nav{padding:0 17px}.cv{padding:9px 12px}.wrap{padding:0 17px}.hero{grid-template-columns:1fr;padding:65px 0;min-height:auto}.hero-side{width:100%}.hero-photo{height:390px}.quick{grid-template-columns:1fr 1fr}.quick div:nth-child(2){border-right:0}.quick div{border-bottom:1px solid var(--line)}.head{grid-template-columns:1fr;gap:13px}.about-grid,.interests,.edu,.skills,.contact{grid-template-columns:1fr;gap:35px}.interest-list,.publications,.skillgrid{grid-template-columns:1fr}.phd{grid-template-columns:1fr;padding:30px}.milestone-grid{grid-template-columns:1fr;gap:28px}.line{display:none}.dot{margin-bottom:8px}.m{padding:0 0 10px}.m img{width:170px;height:110px}.project{grid-template-columns:1fr}.project-info{padding:35px 0}.visual{min-height:245px}.paper h3{font-size:22px}footer{margin:0 17px;padding-left:0;padding-right:0;flex-direction:column;gap:6px}}
+</style>
 </head>
 <body>
-<header class="topbar">
-  <div class="top-inner">
-    <a class="brand" href="#">
-      <span class="brand-mark">✦</span>
-      <span>HARIS'S <b>Portfolio</b></span>
-    </a>
-    <nav class="main-nav" aria-label="Main navigation">
-      <a href="#education">Education</a>
-      <a href="#research">Research</a>
-      <a href="#publication">Publication</a>
-      <a href="#credentials">Credentials</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <a class="resume" href="CV%20SAHED%20HARIS%20MD.pdf" download>↓ &nbsp; Download My Resume</a>
-  </div>
-</header>
+<header class="top"><nav class="nav">
+<a class="logo" href="#">Haris Md Sahed <small>Research Portfolio</small></a>
+<div class="links"><a href="#about">About</a><a href="#research">Research</a><a href="#education">Education</a><a href="#milestones">Milestones</a><a href="#publications">Publications</a><a href="#credentials">Credentials</a><a href="#contact">Contact</a></div>
+<a class="cv" href="Haris_Md_Sahed_CV.pdf" download>↓ &nbsp; Download CV</a>
+</nav></header>
 
-<main class="container">
-
-<section class="profile card">
-  <div class="profile-left">
-    <div class="avatar">H<span>M</span>S</div>
-    <div class="profile-text">
-      <h1>Haris_Md_Sahed</h1>
-      <p>AI &amp; Data Science Researcher</p>
-      <p>Computer Science Master's Student, University of Aizu [2026 - present]</p>
-      <p>Undergraduate Researcher, Tokyo International University [2024 - 2026]</p>
-    </div>
-  </div>
-  <div class="profile-right">
-    <div class="contact-line"><span>✉</span> <b>Email :</b> harismdsahed99@gmail.com</div>
-    <div class="contact-line"><span>⌖</span> Japan</div>
-    <div class="socials">
-      <a href="https://github.com/hmdsahed" target="_blank" aria-label="GitHub">GH</a>
-      <a href="https://linkedin.com/in/hmdsahed" target="_blank" aria-label="LinkedIn">in</a>
-    </div>
-  </div>
+<main>
+<div class="wrap">
+<section class="hero">
+<div>
+<div class="kicker">Researcher · Learner · Builder</div>
+<h1>Haris Md <em>Sahed</em></h1>
+<div class="hero-sub">Exploring AI, Data Science, and Information Systems for real-world impact.</div>
+<p class="intro">I am a Computer Science Master's student at the University of Aizu with a background in Digital Business &amp; Innovation. My interests connect machine learning, information systems, applied statistics, and data-driven decision-making.</p>
+<div class="actions"><a class="action primary" href="mailto:harismdsahed99@gmail.com">Get in Touch</a><a class="action" href="Haris_Md_Sahed_CV.pdf" download>Download My Resume</a></div>
+<div class="social"><a href="https://www.linkedin.com/in/hmdsahed/" target="_blank">LinkedIn ↗</a><a href="https://github.com/hmdsahed" target="_blank">GitHub ↗</a><a href="mailto:harismdsahed99@gmail.com">Email</a><span>Japan</span></div>
+</div>
+<div class="hero-side"><div class="hero-photo"><img src="profile.jpg" alt="Haris Md Sahed"><div class="quote">“Using data and AI to solve meaningful problems for a better world.”<small>LEARNING · RESEARCH · IMPACT</small></div></div></div>
 </section>
 
-<section class="card section">
-  <h2>About Me</h2>
-  <div class="about">
-    <h3>Hey, I'm Haris</h3>
-    <p>I am a data science and machine learning researcher interested in statistical modeling, predictive analytics, and real-world applications of AI. My work focuses on difficult prediction settings involving class imbalance, noisy observations, nonstationarity, and limited data.</p>
-    <p>I have worked on extreme climate event forecasting and rare-event detection using machine learning and deep learning. I am interested in developing reliable, data-driven methods that can support better prediction and decision-making.</p>
-  </div>
+<section class="quick">
+<div><span class="icon">◈</span><b>M.Sc. in Computer Science</b><span>University of Aizu · Oct 2026 — Present</span></div>
+<div><span class="icon">▱</span><b>B.Sc. in Digital Business &amp; Innovation</b><span>TIU · Apr 2022 — Mar 2026 · GPA 3.741 / 4.00</span></div>
+<div><span class="icon">▣</span><b>Non-Degree CS Studies</b><span>University of Aizu · Apr — Sep 2026 · GPA 4.00 / 4.00</span></div>
+<div><span class="icon">◎</span><b>Looking for PhD Opportunities</b><span>Information Systems (IS), MIS, Data Science, ML &amp; related areas</span></div>
 </section>
 
-<section class="card section" id="education">
-  <h2>Education &amp; Experience</h2>
-  <div class="two-col">
-    <div>
-      <h4>Education</h4>
-      <article class="item">
-        <h3>M.Sc. in Computer Science</h3>
-        <strong>University of Aizu</strong>
-        <span>Oct 2026 - Present</span>
-      </article>
-      <article class="item">
-        <h3>B.Sc. in Digital Business &amp; Innovation</h3>
-        <strong>Tokyo International University</strong>
-        <span>Apr 2022 - Mar 2026</span>
-        <p>Concentration: AI &amp; Deep Learning (Data Science Track)<br>GPA: 3.741 / 4.000</p>
-      </article>
-      <article class="item">
-        <h3>Non-Degree Studies in Computer Science</h3>
-        <strong>University of Aizu</strong>
-        <span>Apr 2026 - Sep 2026</span>
-        <p>12 credits completed; four courses graded A.</p>
-      </article>
-    </div>
-    <div>
-      <h4>Research Experience</h4>
-      <article class="item">
-        <h3>Undergraduate Researcher</h3>
-        <strong>Tokyo International University</strong>
-        <span>2024 - 2026</span>
-        <p>Supervised by Prof. F. Ozaydin. Conducted research on extreme climate event forecasting using machine learning and deep learning models.</p>
-      </article>
-      <article class="item">
-        <h3>Research Project</h3>
-        <strong>Rare-Event Detection in High-Frequency Data</strong>
-        <span>2025 - 2026</span>
-        <p>Designed a diagnostic-driven hybrid framework for imbalanced, noisy, and nonstationary high-frequency data.</p>
-      </article>
-    </div>
-  </div>
+<section class="section" id="about">
+<div class="head"><div><span class="num">01</span><div class="label">About Me</div></div><h2>Research at the intersection of <em>data, technology &amp; business.</em></h2></div>
+<div class="about-grid"><div><p>I am a researcher interested in the intersection of machine learning, information systems, data science, and data-driven decision-making. My work focuses on adaptive and interpretable AI systems that can remain useful under limited data conditions.</p><p>Coming from a Digital Business &amp; Innovation background and now studying Computer Science, I am particularly interested in research that connects technical AI methods with organizational, business, and decision-making problems.</p></div><div class="quote2">I am interested in PhD research in <b>Information Systems / MIS, Data Science, Machine Learning, and interdisciplinary AI research</b>, especially where technical methods can create real-world value.</div></div>
 </section>
 
-<section class="card section" id="research">
-  <h2>Research</h2>
-  <div class="research-grid">
-    <article><div class="number">01</div><h3>Rare-Event Detection</h3><p>Hybrid and diagnostic-driven approaches for highly imbalanced prediction problems.</p></article>
-    <article><div class="number">02</div><h3>Extreme Climate Events</h3><p>Machine learning and deep learning for forecasting rare climate events.</p></article>
-    <article><div class="number">03</div><h3>High-Frequency Data</h3><p>Predictive modeling under noise, nonstationarity, and limited signal.</p></article>
-  </div>
+<section class="section" id="research">
+<div class="head"><div><span class="num">02</span><div class="label">Research Interests</div></div><h2>Questions I want to <em>investigate.</em></h2></div>
+<div class="interests"><div><p style="color:var(--muted);font-size:14px;margin:0">My research interests combine technical machine learning with information systems and decision-making. I am especially interested in problems where data are scarce, changing, imbalanced, or difficult to interpret.</p></div><div class="interest-list">
+<div class="interest"><b>01</b> Adaptive Hybrid AI Systems</div><div class="interest"><b>02</b> Machine Learning under Nonstationarity</div>
+<div class="interest"><b>03</b> Class Imbalance &amp; Rare-Event Detection</div><div class="interest"><b>04</b> Human-in-the-Loop Learning</div>
+<div class="interest"><b>05</b> Information Systems (IS) &amp; MIS</div><div class="interest"><b>06</b> Data-Driven Decision Making</div>
+<div class="interest"><b>07</b> AI for Healthcare &amp; Developing Regions</div><div class="interest"><b>08</b> Business Analytics &amp; Socio-Technical Systems</div>
+<div class="interest"><b>09</b> Interpretable &amp; Robust AI</div><div class="interest"><b>10</b> Applied Statistics</div>
+</div></div>
 </section>
 
-<section class="card section" id="projects">
-  <h2>Selected Projects</h2>
-  <article class="project">
-    <div class="project-title"><span>01</span><h3>Traffic Congestion &amp; Smart City Planning</h3></div>
-    <p>Built an end-to-end descriptive → diagnostic → predictive → prescriptive analytics stack on an IoT Edge Computing public-management dataset.</p>
-    <ul><li>LightGBM: traffic patterns — 81%</li><li>XGBoost: congestion — 88%</li><li>Event-type classifier — 79%</li><li>Prophet speed forecasting and geospatial analysis</li></ul>
-    <div class="chips"><span>Python</span><span>XGBoost</span><span>LightGBM</span><span>Prophet</span><span>Tableau</span></div>
-  </article>
-  <article class="project">
-    <div class="project-title"><span>02</span><h3>CulturAlly: AI for Cultural Communication</h3></div>
-    <p>Prototyped an AI tool using ML and NLP to reduce cross-cultural miscommunication through text/audio analysis and culturally aware suggestions.</p>
-    <ul><li>Keyword, sentiment and syntax analysis</li><li>Cultural-context analysis</li><li>Context-aware recommendations</li></ul>
-    <div class="chips"><span>Python</span><span>NLP</span><span>Sentiment Analysis</span><span>AI</span></div>
-  </article>
+<section class="section" id="education">
+<div class="head"><div><span class="num">03</span><div class="label">Education &amp; Experience</div></div><h2>A foundation across <em>business, CS &amp; research.</em></h2></div>
+<div class="edu"><div>
+<div class="entry"><h3>M.Sc. in Computer Science</h3><div class="org">University of Aizu · Japan</div><span class="date">Oct 2026 — Present</span><p>Computer Science graduate study under Prof. Mohamed Hamada.</p></div>
+<div class="entry"><h3>Non-Degree Computer Science Studies</h3><div class="org">University of Aizu · Japan</div><span class="date">Apr — Sep 2026</span><p>Strengthened CS foundations after a DBI background. GPA 4.00 / 4.00: Algorithms &amp; Data Structures, Linear Algebra II, Computer Systems, C Programming.</p></div>
+<div class="entry"><h3>B.Sc. in Digital Business &amp; Innovation</h3><div class="org">Tokyo International University · Japan</div><span class="date">Apr 2022 — Mar 2026</span><p>AI / Data Science Track · GPA 3.741 / 4.00.</p></div>
+</div><div>
+<div class="entry"><h3>Undergraduate Researcher</h3><div class="org">Tokyo International University · Prof. Fatih Ozaydin</div><span class="date">2024 — 2025</span><p>Extreme climate event forecasting with machine learning and deep learning, addressing class imbalance, nonstationarity, low signal-to-noise ratios, asynchronous data, and intraday seasonality.</p></div>
+<div class="entry"><h3>Student Assistant — Statistics</h3><div class="org">Tokyo International University · Prof. Makoto Shimizu</div><span class="date">2023 — 2024</span><p>Supported grading and verification of assignments involving descriptive statistics and basic inferential methods.</p></div>
+</div></div>
 </section>
 
-<section class="card section" id="publication">
-  <h2>Publication</h2>
-  <article class="publication">
-    <span class="badge">ACCEPTED · IEEE AMLDS 2025</span>
-    <h3>Performance Evaluation of Machine Learning and Deep Learning Models for Extreme Climate Event Forecasting</h3>
-    <p>H. M. Sahed, M. A. S. Showrob, F. Ozaydin</p>
-    <a href="https://github.com/hmdsahed" target="_blank">View research profile →</a>
-  </article>
+<section class="section" id="milestones">
+<div class="head"><div><span class="num">04</span><div class="label">Milestones</div></div><h2>Key moments in my <em>academic journey.</em></h2></div>
+<div class="milestones"><div class="line"></div><div class="milestone-grid">
+<div class="m"><div class="dot"></div><div class="mdate">2025/04/01</div><h4>First conference paper accepted</h4><p>IEEE AMLDS 2025 — my first conference publication milestone.</p></div>
+<div class="m"><div class="dot"></div><div class="mdate">2026/03/14</div><h4>Graduated from TIU</h4><p>Graduated from Tokyo International University with a B.Sc. in Digital Business &amp; Innovation.</p><img src="graduation.jpg" alt="Haris Md Sahed graduation at Tokyo International University"></div>
+<div class="m"><div class="dot"></div><div class="mdate">2026/04/01</div><h4>Started Non-Degree CS</h4><p>Strengthened my CS foundation at University of Aizu. GPA 4.00 / 4.00.</p></div>
+<div class="m"><div class="dot"></div><div class="mdate">2026/08</div><h4>Passed entrance exam</h4><p>Started M.Sc. in Computer Science at University of Aizu under Prof. Mohamed Hamada.</p></div>
+<div class="m"><div class="dot"></div><div class="mdate">2027</div><h4>Next milestone</h4><p>Preparing applications for PhD opportunities in IS / MIS / Data Science and related areas.</p></div>
+</div></div>
 </section>
 
-<section class="card section">
-  <h2>Achievements &amp; Skills</h2>
-  <div class="two-col achievements">
-    <div>
-      <h4>Awards &amp; Scholarships</h4>
-      <ul class="plain">
-        <li>JASSO Scholarship for Privately Financed International Students</li>
-        <li>Soka City Hall Scholarship for Undergraduate Students</li>
-      </ul>
-    </div>
-    <div>
-      <h4>Technical Skills</h4>
-      <div class="skill-lines">
-        <p><b>Programming</b> Python · R · SQL</p>
-        <p><b>ML / DL</b> scikit-learn · XGBoost · LightGBM · TensorFlow · PyTorch</p>
-        <p><b>Tools</b> Git · Jupyter · Tableau · LaTeX</p>
-      </div>
-    </div>
-  </div>
+<section class="section" id="publications">
+<div class="head"><div><span class="num">05</span><div class="label">Publications</div></div><h2>Research in <em>conference &amp; preprint.</em></h2></div>
+<div class="publications">
+<article class="paper"><span class="type">CONFERENCE PAPER · IEEE AMLDS 2025</span><h3>Evaluation of Machine Learning and Deep Learning Models for Extreme Climate Event Forecasting</h3><div class="authors">Haris Md Sahed · Md Abu Saleh Showrob · Fatih Ozaydin</div><p class="paper-desc">Proceedings of the 2025 International Conference on Advanced Machine Learning and Data Science (AMLDS), Tokyo, Japan.</p><div class="paper-bottom"><a class="paper-btn main" href="https://doi.org/10.1109/AMLDS63918.2025.11159347" target="_blank">View DOI ↗</a><a class="paper-btn" href="https://doi.org/10.1109/AMLDS63918.2025.11159347" target="_blank">10.1109/AMLDS63918.2025.11159347</a></div></article>
+<article class="paper pre"><span class="type">PREPRINT · arXiv</span><h3>Volatility-Aware Extreme Event Detection in High-Frequency Financial Markets</h3><div class="authors">Maorufa Zaman · Haris Md Sahed</div><p class="paper-desc">A diagnostic-driven framework for rare-event detection in high-frequency financial markets, addressing nonstationarity, low signal-to-noise ratios, and imbalanced data.</p><div class="paper-bottom"><a class="paper-btn main" href="https://arxiv.org/abs/2607.17555" target="_blank">View on arXiv ↗</a><a class="paper-btn" href="https://arxiv.org/pdf/2607.17555" target="_blank">PDF ↗</a></div></article>
+</div>
+</section>
+
+<section class="section">
+<div class="phd"><div><div class="kicker">Open to PhD opportunities</div><h3>Looking for research environments where technology meets business and society.</h3><p>I am interested in PhD opportunities in Information Systems (IS), MIS, Data Science, Machine Learning, and interdisciplinary AI research — particularly data-driven decision-making, robust AI, business analytics, healthcare systems, and socio-technical applications.</p></div><a href="mailto:harismdsahed99@gmail.com?subject=PhD%20Research%20Opportunity">Let's Connect →</a></div>
+</section>
+
+<section class="section">
+<div class="head"><div><span class="num">07</span><div class="label">Toolkit</div></div><h2>Tools for <em>research.</em></h2></div>
+<div class="skills"><p style="font-size:13px;color:var(--muted);margin:0">A practical stack for statistical analysis, machine learning experiments, visualization, and reproducible research.</p><div class="skillgrid">
+<div class="skill"><span>Programming &amp; Data Science</span><b>Python · R · SQL · scikit-learn · XGBoost · LightGBM</b></div>
+<div class="skill"><span>Deep Learning</span><b>TensorFlow · PyTorch</b></div>
+<div class="skill"><span>Statistics</span><b>Hypothesis Testing · Regression · Time-Series Analysis</b></div>
+<div class="skill"><span>Research Tools</span><b>Git · Jupyter · Tableau · LaTeX</b></div>
+</div></div>
 </section>
 
 
-<section class="card section" id="credentials">
-  <div class="section-heading">
-    <div>
-      <p class="eyebrow">ACADEMIC RECORDS</p>
-      <h2>Academic Credentials</h2>
-    </div>
-    <p class="section-intro">Selected academic records and English-language proficiency results.</p>
-  </div>
-  <div class="credentials-grid">
-    <article class="credential">
-      <div class="credential-icon">🎓</div>
-      <span class="credential-type">ACADEMIC TRANSCRIPT</span>
+<section class="section" id="credentials">
+  <div class="head"><div><span class="num">06</span><div class="label">Academic Credentials</div></div><h2>Academic records &amp; <em>English proficiency.</em></h2></div>
+  <div class="publications">
+    <article class="paper">
+      <span class="type">ACADEMIC TRANSCRIPT</span>
       <h3>B.Sc. Academic Transcript</h3>
-      <p class="issuer">Tokyo International University</p>
-      <div class="credential-stat"><strong>3.741 / 4.000</strong><span>Cumulative GPA</span></div>
-      <p class="credential-note">Bachelor of Science in Digital Business &amp; Innovation.</p>
-      <div class="credential-actions">
-        <a class="button button-primary" href="documents/Undergraduate_Transcript_TIU.pdf" target="_blank" rel="noopener">View PDF ↗</a>
-        <a class="button button-secondary" href="documents/Undergraduate_Transcript_TIU.pdf" download>Download ↓</a>
+      <div class="authors">Tokyo International University</div>
+      <p class="paper-desc">Bachelor of Science in Digital Business &amp; Innovation · Cumulative GPA: 3.741 / 4.000.</p>
+      <div class="paper-bottom">
+        <a class="paper-btn main" href="documents/Undergraduate_Transcript_TIU.pdf" target="_blank" rel="noopener">View PDF ↗</a>
+        <a class="paper-btn" href="documents/Undergraduate_Transcript_TIU.pdf" download>Download PDF ↓</a>
       </div>
     </article>
-    <article class="credential">
-      <div class="credential-icon">💻</div>
-      <span class="credential-type">ACADEMIC TRANSCRIPT</span>
-      <h3>Non-Degree CS Transcript</h3>
-      <p class="issuer">University of Aizu</p>
-      <div class="credential-stat"><strong>12 credits</strong><span>Four courses · A grades</span></div>
-      <p class="credential-note">Computer science foundation courses completed in 2026.</p>
-      <div class="credential-actions">
-        <a class="button button-primary" href="documents/NonDegree_CS_Transcript_University_of_Aizu.pdf" target="_blank" rel="noopener">View PDF ↗</a>
-        <a class="button button-secondary" href="documents/NonDegree_CS_Transcript_University_of_Aizu.pdf" download>Download ↓</a>
+    <article class="paper">
+      <span class="type">ACADEMIC TRANSCRIPT</span>
+      <h3>Non-Degree Computer Science Transcript</h3>
+      <div class="authors">University of Aizu</div>
+      <p class="paper-desc">12 credits completed across four Computer Science courses.</p>
+      <div class="paper-bottom">
+        <a class="paper-btn main" href="documents/NonDegree_CS_Transcript_University_of_Aizu.pdf" target="_blank" rel="noopener">View PDF ↗</a>
+        <a class="paper-btn" href="documents/NonDegree_CS_Transcript_University_of_Aizu.pdf" download>Download PDF ↓</a>
       </div>
     </article>
-    <article class="credential">
-      <div class="credential-icon">🌐</div>
-      <span class="credential-type">ENGLISH PROFICIENCY</span>
+    <article class="paper">
+      <span class="type">ENGLISH PROFICIENCY</span>
       <h3>TOEFL iBT Score Report</h3>
-      <p class="issuer">Educational Testing Service (ETS)</p>
-      <div class="credential-stat"><strong>92 / 120</strong><span>Test score · MyBest: 97</span></div>
-      <p class="credential-note">Test date: August 30, 2025. MyBest section scores are combined from valid test dates.</p>
-      <div class="credential-actions">
-        <a class="button button-primary" href="documents/TOEFL_iBT_Score_Report.pdf" target="_blank" rel="noopener">View PDF ↗</a>
-        <a class="button button-secondary" href="documents/TOEFL_iBT_Score_Report.pdf" download>Download ↓</a>
+      <div class="authors">Educational Testing Service (ETS)</div>
+      <p class="paper-desc">TOEFL iBT score report · Test score: 92 / 120 · MyBest score: 97 / 120.</p>
+      <div class="paper-bottom">
+        <a class="paper-btn main" href="documents/TOEFL_iBT_Score_Report.pdf" target="_blank" rel="noopener">View PDF ↗</a>
+        <a class="paper-btn" href="documents/TOEFL_iBT_Score_Report.pdf" download>Download PDF ↓</a>
       </div>
     </article>
   </div>
-  <p class="public-note">These documents are published for academic and professional reference.</p>
+  <p style="font-size:10px;color:var(--muted);margin-top:18px">Academic documents are publicly available for verification and reference.</p>
 </section>
 
-<section class="card section" id="contact">
-  <h2>Contact Me</h2>
-  <div class="contact-grid">
-    <div><h4>Mail Me:</h4><a href="mailto:harismdsahed99@gmail.com">harismdsahed99@gmail.com</a></div>
-    <div><h4>Find Me:</h4><p>Japan</p><div class="socials small"><a href="https://github.com/hmdsahed" target="_blank">GitHub</a><a href="https://linkedin.com/in/hmdsahed" target="_blank">LinkedIn</a></div></div>
-  </div>
-</section>
-
+<section class="contact" id="contact"><div><div class="kicker">08 · Contact</div><h2>Let's talk about <em>research.</em></h2></div><div><p>For research collaboration, academic opportunities, or PhD-related inquiries:</p><a class="email" href="mailto:harismdsahed99@gmail.com">harismdsahed99@gmail.com</a><div class="social"><a href="https://www.linkedin.com/in/hmdsahed/" target="_blank">LINKEDIN ↗</a><a href="https://github.com/hmdsahed" target="_blank">GITHUB ↗</a></div></div></section>
+</div>
 </main>
-<footer>© 2026 Haris Md Sahed · All rights reserved.</footer>
+<footer><span>© 2026 Haris Md Sahed</span><span>Research Portfolio · Japan</span></footer>
 </body>
 </html>
